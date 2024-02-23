@@ -12,48 +12,63 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="container-left">
-            <div class="background">
-                <img src="./static/canyon.jpg" alt="canyon rocks" width="500">
-            </div>
-            <div class="logo">
-                <img src="./static/salt-bw-logo1.png" alt="salt logo" width="500">
+    <div class="flex-container">
+        <div class="hero">
+            <img class="hero-image" src="./static/canyon.jpg" alt="canyon rocks" width="500">
+            <div class="hero-logo">
+                <img class="hero-logo" src="./static/salt-bw-logo1.png" alt="salt logo" width="500">
             </div>
         </div>
-        <div class="container-right">
-            <p>This is not a real online service! You know you need something like this in your life to help you realize
-                your
-                deepest dreams. Sign up now to get started.</p>
-            <p>You know you want to.</p>
-            <form action="#" method="get" class="sign-up-form">
-                <fieldset>
-                    <legend>Let's do this!</legend>
-                    <div class="form-row">
-                        <label for="first-name">First Name:</label>
-                        <input type="text" id="first-name" name="first-name" />
-                        <label for="last-name">Last Name:</label>
-                        <input type="text" id="last-name" name="last-name" />
-                    </div>
-                    <div class="form-row">
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" />
-                        <label for="phone">Phone Number:</label>
-                        <input type="tel" id="phone" name="phone" />
-                    </div>
-                    <div class="form-row">
-                        <label for="password">Password:</label>
-                        <input type="password" id="password" name="password" />
-                        <label for="phone">Confirm Password:</label>
-                        <input type="password" id="password-confirmation" name="password-confirmation" />
-                    </div>
-                </fieldset>
-                <button type="submit">Create Account</button>
-            </form>
-            <p>Already have an account? <a href="#">Log in</a></p>
-            <script src="form.js"></script>
+        <div class="flex-column">
+            <div class="flex-item">
+                <p>This is not a real online service! You know you need something like this in your life to help you
+                    realize your deepest dreams. Sign up now to get started.</p>
+                <p>You know you want to.</p>
+            </div>
+            <div class="flex-item">
+                <form action="#" method="get" class="sign-up-form">
+                    <fieldset>
+                        <legend>Let's do this!</legend>
+                        <div class="form-row">
+                            <div class="form-item">
+                                <label for="first-name">First Name:</label>
+                                <input type="text" id="first-name" name="first-name" />
+                            </div>
+                            <div class="form-item">
+                                <label for="last-name">Last Name:</label>
+                                <input type="text" id="last-name" name="last-name" />
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-item">
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="email" />
+                            </div>
+                            <div class="form-item">
+                                <label for="phone">Phone Number:</label>
+                                <input type="tel" id="phone" name="phone" />
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-item">
+                                <label for="password">Password:</label>
+                                <input type="password" id="password" name="password" />
+                            </div>
+                            <div class="form-item">
+                                <label for="phone">Confirm Password:</label>
+                                <input type="password" id="password-confirmation" name="password-confirmation" />
+                            </div>
+                        </div>
+                    </fieldset>
+                    <button type="submit">Create Account</button>
+                </form>
+            </div>
+            <div class="flex-item">
+                <p>Already have an account? <a href="#">Log in</a></p>
+            </div>
         </div>
     </div>
+    <script src="form.js"></script>
 </body>
 
 </html>

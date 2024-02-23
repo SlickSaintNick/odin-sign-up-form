@@ -1,0 +1,15 @@
+Horizontal flex:
+div 'left'
+div 'right'
+
+In left we have:
+logo
+image credit
+
+In right we have:
+banner
+form
+footer (which includes the submit button)
+
+So a horizontal flex for the left and right, and vertical flex for the rest.
+Within the form itself we also have columns which we will probably deal with flex or media-query.

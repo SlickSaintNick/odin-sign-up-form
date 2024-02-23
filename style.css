@@ -1,7 +1,6 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.flex-container {
+    display: flex;
+    gap: 40px;
 }
 
 body {
@@ -12,29 +11,63 @@ body {
     line-height: 1.6;
 }
 
-.container {
+.hero {
+    position: relative;
     display: flex;
-    align-items: center;
+    justify-content: center;
 }
 
-.container-left>div.logo {
+.hero>.hero-logo {
     position: absolute;
-    bottom: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(100, 100, 100, 0.2);
 }
 
-.container-right {
+.flex-column {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    padding: 40px;
+    justify-content: space-evenly;
+    max-width: 700px;
+    min-width: 400px;
 }
 
-.sign-up-form {
-    background-color: #F6F7F8;
+.form {
+    padding: 50px;
+}
+
+.form-row {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.form-item {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.form-item label {
+    margin-bottom: 15px;
+    text-align: right;
+    width: 120px;
+    /* margin-top: 7px; */
+    padding-right: 20px;
+    font-size: 1rem;
+}
+
+.form-item input {
+    background-color: #FFFFFF;
     border: 1px solid #D6D9DC;
     border-radius: 3px;
-
-    width: 80%;
-    padding: 50px;
-    margin: 0 0 40px 0;
+    width: 140px;
+    height: initial;
+    padding: 7px;
+    font-size: 14px;
 }
