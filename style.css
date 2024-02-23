@@ -4,6 +4,8 @@ body {
     font-family: "Oswald", sans-serif;
     font-size: 20px;
     line-height: 1.6;
+    display: flex;
+    justify-content: center;
 }
 
 /* Flex Layout */
@@ -33,6 +35,14 @@ body {
     justify-content: space-evenly;
     max-width: 700px;
     min-width: 400px;
+}
+
+legend {
+    background: #701E15;
+    color: white;
+    padding: 10px 20px;
+    margin: 20px;
+    border-radius: 0.5em;
 }
 
 .form {
@@ -82,7 +92,8 @@ body {
 .form-item input:focus {
     border: 1px solid #701E15;
     /* border: 1px solid white; */
-    outline: none;
+    /* outline: none; */
+    background-color: #F5C287;
 }
 
 .form-item input:valid {
@@ -92,8 +103,6 @@ body {
 .form-item input:invalid {
     border: 1px solid #701E15;
     box-shadow: 0 0 5px 1px #701E15;
-    /* background: linear-gradient(#D880A4, #701E15); */
-    /* color: white; */
 }
 
 /* Form validation - add tick for valid, cross for invalid */
@@ -115,10 +124,9 @@ body {
     top: 0px;
 }
 
-.form-item input:invalid+span::before {
-    content: '✖';
-    color: #701E15;
-}
+/* .form-item input:invalid+span::before {
+    content: '';
+} */
 
 .form-item input:valid+span::before {
     content: '✓';
@@ -149,4 +157,10 @@ button:hover {
 button:active {
     background-color: #701E15;
     box-shadow: 0 0 5px 1px #D880A4;
+}
+
+@media only screen and (max-width: 1183px) {
+    .form-item label {
+        text-align: left;
+    }
 }
